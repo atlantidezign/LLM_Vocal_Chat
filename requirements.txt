@@ -1,0 +1,39 @@
+# LLM Vocal Chat - Dipendencies Python
+# Installa con: pip install -r requirements.txt
+
+# Interfaccia web
+gradio>=4.0.0
+
+# Riconoscimento vocale
+SpeechRecognition>=3.10.0
+
+# Sintesi vocale (Text-to-Speech)
+pyttsx3>=2.90
+
+# Audio processing
+# PyAudio - Su Windows usa: pipwin install pyaudio
+pyaudio>=0.2.13
+
+# HTTP requests per LM Studio API
+requests>=2.31.0
+
+# Elaborazione numerica
+numpy>=1.24.0
+scipy>=1.11.0
+
+# PyTorch con supporto CUDA (per GPU NVIDIA)
+# Per CUDA 11.8:
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Whisper per riconoscimento vocale locale (installato da GitHub)
+# Installa separatamente con: pip install git+https://github.com/openai/whisper.git
+# openai-whisper (vedi README per istruzioni)
+
+# Opzionale ma consigliato per migliore resampling audio
+librosa>=0.10.0
+
+# Export DOCX
+python-docx>=0.8.11
